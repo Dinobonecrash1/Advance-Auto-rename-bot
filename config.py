@@ -6,7 +6,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "28713982")
     API_HASH  = os.environ.get("API_HASH", "237e15f7c006b10b4fa7c46fee7a5377")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8126440021:AAGRYq6Xeq1QvZHjJkPI6N4-ToM0gXDeTe8")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6255221851:AAFSXLwuNUxQ17tnU1TaHF5EJlAeugrJKwQ")
 
     # database config
     DB_NAME = os.environ.get("DB_NAME","rename1")
@@ -16,14 +16,14 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://i.ibb.co/kgSv5sKP/3c10c3a8fc8d.jpg")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1993048420 5743248220 1214348787').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5817124748').split()]
     
     # Force Subscribe Channel (Adjusted to singular as per filerenamer.py expectation)
-    FORCE_SUB_CHANNEL = int(os.environ.get('FORCE_SUB_CHANNEL', '-1002513815996')) # Replace YOUR_CHANNEL_ID_HERE with the actual ID, or ensure it's set in env
+    FORCE_SUB_CHANNEL = int(os.environ.get('FORCE_SUB_CHANNEL', '0')) # Replace YOUR_CHANNEL_ID_HERE with the actual ID, or ensure it's set in env
     
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002513815996"))
-    BOT_OWNER = int(os.environ.get("BOT_OWNER", "7518139247"))
-    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1002513815996"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001586987735"))
+    BOT_OWNER = int(os.environ.get("BOT_OWNER", "5817124748"))
+    DUMP_CHANNEL = int(os.environ.get("DUMP_CHANNEL", "-1001586987735"))
 
     # wes response configuration
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
